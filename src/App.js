@@ -1,9 +1,9 @@
 import React from 'react';
-import Header from './component/Header.jsx';
-import Main from '../component/Main.jsx';
-import Testimonials from '../component/Testimonials.jsx';
-import Pictures from '../component/Pictures.jsx';
-import Footer from '../component/Footer.jsx';
+import Header from './component/header.jsx';
+import Main from './component/main.jsx';
+import Testimonials from './component/testimonials.jsx';
+import Pictures from './component/Pictures.jsx';
+import Footer from './component/footer.jsx';
 import './App.css'; 
 
 const App = () => {
