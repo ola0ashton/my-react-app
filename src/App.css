@@ -1,88 +1,203 @@
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
 }
 
 header {
-  background-color: #282c34;
-  padding: 20px;
-  color: white;
+  background-image: url(images/desktop/image-header.jpg);
+  height: 50vh;
+  padding: 35px;
+  background-position: center;
+  background-size: cover;
 }
 
-nav ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-nav li {
-  display: inline;
-  margin: 0 10px;
-}
-
-.arrow {
-  margin-top: 20px;
-}
-
-main {
-  padding: 20px;
-}
-
-.box1, .box4, .box5, .box6 {
-  margin: 20px 0;
-}
-
-footer {
-  background-color: #282c34;
-  color: white;
-  padding: 10px;
+nav {
   display: flex;
-  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header h1 {
+  text-align: center;
+  text-transform: uppercase;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+header ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+header a {
+  display: block;
+  text-decoration: none;
+  color: white;
   align-items: center;
 }
 
-footer ul {
-  list-style-type: none;
-  padding: 0;
+.arrow {
+  display: block;
+  margin: auto;
 }
 
-footer li {
-  display: inline;
-  margin: 0 10px;
+box {
+  border-radius: 20px;
+  color: black;
+  padding: 12px;
+  background-color: white;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  border-color: white;
+  justify-content: center;
 }
 
-footer div img {
-  margin: 0 5px;
+main {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-columns: 6, 2fr;
+}
+
+main > div {
+  border: 1px solid white transparent;
+  height: 60vh;
+  padding: 30px;
+}
+
+.box1, .box4 {
+  display: flex;
+  gap: 15%;
+  flex-direction: column;
+  justify-content: center;
+  padding-inline: 30%;
+}
+
+.box1 > h4 {
+  text-transform: uppercase;
+  border-bottom: 5px solid hsl(51, 100%, 49%);
+  width: max-content;
+  line-height: 0.4em;
+  border-radius: 20px;
+}
+
+.box2 {
+  background-image: url(./images/desktop/image-transform.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.box3 {
+  background-image: url(./images/desktop/image-stand-out.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.box4 > h4 {
+  text-transform: uppercase;
+  border-bottom: 5px solid hsl(7, 99%, 70%);
+  width: max-content;
+  line-height: 0.4em;
+  border-radius: 20px;
+}
+
+.box5, .box6 {
+  background-position-x: center;
+  background-size: cover;
+  display: flex;
+  gap: 10px;
+  justify-content: end;
+  flex-direction: column;
+  text-align: center;
+  padding-bottom: 5vh;
+}
+
+.box5 {
+  background-image: url(./images/desktop/image-graphic-design.jpg);
+  color: hsl(167, 40%, 24%);
+}
+
+.box6 {
+  background-image: url(./images/desktop/image-photography.jpg);
+  color: hsl(198, 62%, 26%);
+}
+
+h3 {
+  text-align: center;
+  text-transform: uppercase;
+  padding-top: 5vh;
+  color: hsl(232, 10%, 55%);
+}
+
+#section {
+  display: flex;
+  flex-direction: row;
+  margin-block: 10vh;
+  text-align: center;
+  gap: 20px;
+  padding-inline: 10vw;
+}
+
+#section img {
+  border-radius: 100%;
+  width: 100px;
+  display: block;
+  margin: auto;
+}
+
+section > div {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+section > div > div {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.beforefooter {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+}
+
+section > img {
+  width: 100%;
+}
+
+footer {
+  background-color: hsl(168, 34%, 41%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+  padding-top: 40px;
+}
+
+footer > img {
+  color: #25564b;
+}
+
+footer > ul {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+}
+
+footer li > a {
+  text-decoration: none;
+  color: hsl(167, 40%, 24%);
+}
+
+footer > div {
+  display: flex;
+  gap: 20px;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
 }
